@@ -1,0 +1,34 @@
+body {
+    margin: 0 auto;
+    padding: 0;
+    background: #f0f8ff;
+}
+
+.dashform {
+    color:#f0f8ff;
+    margin: 5%;
+    background-image: url(../../images/beer.jpeg);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.dashform h1 {
+    color:#f7df0a;
+    box-shadow: #DBA642;
+}
+
+.dashform h2 {
+    color: aqua;
+    font-family: cursive;
+}
+
+.dashform h3 {
+    color: #f0f8ff;
+}
+
+.dashform button {
+    height: 5vh;
+    width: 8vw;
+    border: none;
+    border-radius: 10px;
+}

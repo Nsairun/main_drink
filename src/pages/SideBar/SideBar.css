@@ -1,0 +1,238 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background: black;
+}
+
+.drinks-container {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.menu-img img {
+  height: 5vh;
+  cursor: pointer;
+}
+
+.drinks-container input {
+  height: 5vh;
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.side_menu {
+  position: fixed;
+  top: 75px;
+  left: 0;
+  margin: 3rem 0 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transform: translate(-110%);
+  transition: 0.5s;
+}
+
+.active_side_menu {
+  transform: translate(10px);
+}
+
+.mainHeader {
+  color: rgb(32, 15, 1);
+  font-size: 20px;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 7vh;
+  background-color: #222;
+  color: rgb(241, 147, 7);
+}
+
+.menu-img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  width: 16vw;
+  padding: 7px;
+}
+
+.section-one-holder {
+  width: 20vw;
+}
+
+.section-one {
+  opacity: 0.9;
+  max-width: 20vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  border: 3px solid #222;
+  background: linear-gradient(
+    rgb(245, 98, 13),
+    rgb(241, 140, 7),
+    rgba(243, 147, 3, 0.678),
+    rgb(75, 46, 3),
+    rgba(58, 24, 1, 0.76)
+  );
+}
+
+.filter-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.filter-section .piece-title {
+  cursor: pointer;
+}
+
+.filter-section .options {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+}
+
+.drinks-checkbox {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  font-style: italic;
+  font-family: cursive;
+  padding: 4px;
+  cursor: pointer;
+}
+
+.section-one h5 {
+  border: 5px solid rgba(3, 61, 75, 0.342);
+  box-shadow: 15px 13px 10px rgb(77, 66, 2);
+  width: 15vw;
+  margin: 0 auto;
+  font-size: 25px;
+  border-radius: 20px;
+}
+
+.section-two {
+  background-image: url(../../images/beer-awesome-hd-wallpaper.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  /* background: linear-gradient(
+    rgb(13, 245, 245),
+    rgb(111, 213, 238),
+    rgba(10, 119, 165, 0.678),
+    rgb(150, 192, 216),
+    rgba(80, 121, 255, 0.658)
+  ); */
+  width: 100%;
+  height: fit-content;
+  min-height: 100vh;
+  gap: 2rem;
+  border: 5px solid black;
+}
+
+.topic {
+  width: 100%;
+  height: 5vh;
+  height: fit-content;
+  display: flex;
+  justify-content: space-around;
+  padding: 2rem 0 10px;
+}
+
+.section-two h1 {
+  font-size: 60px;
+  border-radius: 10px;
+  box-shadow: 15px 13px 10px rgb(66, 31, 2);
+  font-family: cursive;
+  font-weight: 900;
+  height: fit-content;
+}
+
+.section-two h3 {
+  cursor: pointer;
+  font-weight: 700;
+  font-family: cursive;
+  align-items: center;
+  box-shadow: 15px, 13px, 10px rgb(2, 53, 66);
+}
+
+.inside-span {
+  display: flex;
+  cursor: pointer;
+  border-collapse: collapse;
+  line-height: 1.3;
+  border: none;
+  font-weight: 400;
+  font-family: cursive;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #f389097e;
+}
+
+.drinks-body {
+  width: 100%;
+  height: fit-content;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  margin-top: 5%;
+}
+
+.drink {
+  width: 100%;
+  height: fit-content;
+  border: 1px solid rgb(238, 224, 204);
+  padding: 1rem 10px;
+  cursor: pointer;
+}
+
+.drink h1 {
+  width: 100%;
+  height: fit-content;
+  margin: 0 0 10px;
+}
+
+.drink img {
+  width: 100%;
+  margin: 0 0 10px;
+}
+
+.drink p {
+  background-color: #f389097e;
+  /* color: #f5f5f5; */
+  width: 100%;
+  word-wrap: normal;
+  line-height: 30px;
+  margin: 0 0 10px;
+  font-weight: 700;
+  border-top-right-radius: 20px;
+  border-bottom-left-radius: 20px; 
+  border: 2px solid rgb(65, 43, 2);
+}
+
+@media only screen and (max-width: 1020px) {
+  .drinks-body {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .drinks-body {
+    grid-template-columns: 1fr;
+  }
+}
