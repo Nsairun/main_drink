@@ -1,0 +1,21 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url(../../images/beer.jpeg);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.myProfile-container {
+    margin: 0 auto;
+    color: aliceblue;
+    font-family: cursive;
+    margin: 5%;
+    padding: 3%;
+}
+
+.profile-info {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

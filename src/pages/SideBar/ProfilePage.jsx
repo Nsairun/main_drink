@@ -1,0 +1,37 @@
+import React, { useEffect, useState } from 'react';
+import { getCurrentUser } from '../../api/auth';
+import './ProfilePage.css';
+
+function ProfilePage() {
+  const [user, setUser] = useState();
+
+  useEffect(() => {
+    getCurrentUser().then(setUser);
+  }, []);
+
+  return (
+    <div>
+      <div className="myProfile-container">
+        <h1>PROFILE</h1>
+        <div className="Profile-info">
+          <h1>First Name:</h1>
+          <p>{user?.firstName}</p>
+        </div>
+        <div className="Profile-info">
+          <h1>Second Name:</h1>
+          <p>{user?.lastName}</p>
+        </div>
+        <div className="Profile-info">
+          <h1>Phone Number:</h1>
+          <p>{user?.PhoneNumber}</p>
+        </div>
+        <div className="Profile-info">
+          <h1>E-MAIL:</h1>
+          <p>{user?.emailAdress}</p>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+export default ProfilePage;

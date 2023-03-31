@@ -1,7 +1,7 @@
 body {
     margin: 0 auto;
     padding: 0;
-    background: #f0f8ff;
+    background: #03192c;
 }
 
 .dashform {
@@ -12,14 +12,26 @@ body {
     background-size: contain;
 }
 
+.form1 {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
 .dashform h1 {
-    color:#f7df0a;
-    box-shadow: #DBA642;
+    color:#facd04;
+    box-shadow: 15px 15px 14px #facd0493;
+    width: 19vw;
+    text-align: center;
+    font-family: cursive;
 }
 
 .dashform h2 {
-    color: aqua;
+    color: #ecf1f1;
     font-family: cursive;
+    border-radius: 8px;
+    background: #f0f8ff59;
+    width: 15%;
 }
 
 .dashform h3 {
@@ -31,4 +43,39 @@ body {
     width: 8vw;
     border: none;
     border-radius: 10px;
+}
+
+.blocks {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    margin: 2%;
+    background: #facd0493;
+    height: 35vh;
+    border-top-left-radius: 200px;
+    border-bottom-right-radius: 200px;
+    width: 30vw;
+    border: 3px solid#3f3902;
+    box-shadow: 15px 15px 13px#3f3902;
+    font-family: cursive;
+}
+
+.accessTables {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.glass input,
+.drink-container input,
+.ingredients-container input {
+    height: 10vh;
+    width: 24%;
+    border-radius: 10px;
+    gap: 2rem;
+    margin: 5%;
+    font-family: cursive;
+    font-weight: 600;
 }

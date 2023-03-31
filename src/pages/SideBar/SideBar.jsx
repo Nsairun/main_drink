@@ -32,6 +32,10 @@ function SideBar() {
     navigate('/login');
   };
 
+  const toProfile = () => {
+    navigate('/profilepage');
+  };
+
   const simulation = [
     {
       title: 'category',
@@ -83,7 +87,6 @@ function SideBar() {
               {simulation?.map((piece) => (
                 <div className="filter-section">
                   <h5 className="piece-title">{piece.title}</h5>
-
                   <div className="options">
                     {piece.options.map((item) => (
                       <label htmlFor={item} className="drinks-checkbox">
@@ -124,16 +127,7 @@ function SideBar() {
                     <p onClick={toLogin}>LogIn</p>
                   </u>
                   <u>
-                    <p>Drinks</p>
-                  </u>
-                  <u>
-                    <p>Ingredients</p>
-                  </u>
-                  <u>
-                    <p>Glasses</p>
-                  </u>
-                  <u>
-                    <p>Profile</p>
+                    <p onClick={toProfile}>Profile</p>
                   </u>
                 </div>
               )}

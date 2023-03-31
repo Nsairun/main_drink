@@ -5,17 +5,14 @@ function DashBd1() {
   return (
     <div>
       <form action="">
-        <h1>INGREDIENTS</h1>
-        <div>
-          <h2>Beer</h2>
-          <div>
-            <ul>
-              <li>
-                <input type="text" placeholder="Edit ingredient" />
-                <button type="submit">+</button>
-              </li>
-            </ul>
-          </div>
+        <div className="drink-container">
+          <h1>Edit Drinks</h1>
+          <ul>
+            <li>
+              <input type="text" placeholder="Edit drink" />
+              <button type="submit">+</button>
+            </li>
+          </ul>
         </div>
       </form>
     </div>

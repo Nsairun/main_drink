@@ -3,13 +3,13 @@ import './DashBd2.css';
 
 function DashBd2() {
   return (
-    <div className="drinksEdit">
+    <div>
       <form action="">
-        <h1>DRINKS EDIT</h1>
-        <div>
+        <h1> EDIT INGREDIENTS</h1>
+        <div className="ingredients-container">
           <ul>
             <li>
-              <input type="text" placeholder="Edit drinks" />
+              <input type="text" placeholder="Edit ingredients" />
               <button type="submit">+</button>
             </li>
           </ul>
