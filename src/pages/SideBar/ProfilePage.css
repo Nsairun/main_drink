@@ -1,14 +1,11 @@
 body {
     margin: 0;
     padding: 0;
-    background-image: url(../../images/beer.jpeg);
-    background-repeat: no-repeat;
-    background-size: contain;
 }
 
 .myProfile-container {
     margin: 0 auto;
-    color: aliceblue;
+    color: rgb(2, 27, 49);
     font-family: cursive;
     margin: 5%;
     padding: 3%;
@@ -18,4 +15,10 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+    border: 4px solid rgb(2, 24, 43);
+    background: #00a2ff25;
+    border-radius: 8px;
+    text-align: left;
+    max-height: fit-content;
+    max-width: 30px;
 }

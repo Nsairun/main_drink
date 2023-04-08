@@ -12,7 +12,9 @@ function ProfilePage() {
   return (
     <div>
       <div className="myProfile-container">
-        <h1>PROFILE</h1>
+        <h1>
+          <u>PROFILE</u>
+        </h1>
         <div className="Profile-info">
           <h1>First Name:</h1>
           <p>{user?.firstName}</p>
@@ -23,7 +25,7 @@ function ProfilePage() {
         </div>
         <div className="Profile-info">
           <h1>Phone Number:</h1>
-          <p>{user?.PhoneNumber}</p>
+          <p>{user?.Phone}</p>
         </div>
         <div className="Profile-info">
           <h1>E-MAIL:</h1>

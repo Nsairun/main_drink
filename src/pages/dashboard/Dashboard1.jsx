@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
-import { useNavigate, Outlet } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 import { getCurrentUser } from '../../api/auth';
-import './Dashboard.css';
+import './Dashboard1.css';
 
 function Dashboard() {
   const [user, setUser] = useState();
@@ -12,15 +12,7 @@ function Dashboard() {
   }, []);
 
   const toDashbd1 = () => {
-    navigate('dashBd1', { replace: true });
-  };
-
-  const toDashbd2 = () => {
-    navigate('dashBd2', { replace: true });
-  };
-
-  const toDashbd3 = () => {
-    navigate('dashBd3', { replace: true });
+    navigate('SideBar');
   };
 
   return (
@@ -38,21 +30,7 @@ function Dashboard() {
             Drinks
           </button>
         </div>
-        <div className="blocks">
-          <h3>Access Dashboard for Ingredients </h3>
-          <button type="submit" onClick={toDashbd2}>
-            Ingredients
-          </button>
-        </div>
-        <div className="blocks">
-          <h3>Access Dashboard for Glasses </h3>
-          <button type="submit" onClick={toDashbd3}>
-            Glasses
-          </button>
-        </div>
       </div>
-
-      <Outlet />
     </form>
   );
 }

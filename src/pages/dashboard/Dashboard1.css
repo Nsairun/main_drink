@@ -1,6 +1,7 @@
 body {
     margin: 0 auto;
     padding: 0;
+    background: #03192c;
 }
 
 .dashform {
@@ -15,18 +16,18 @@ body {
 }
 
 .dashform h1 {
-    color:#18191a;
-    box-shadow: 15px 15px 14px #02456493;
+    color:#facd04;
+    box-shadow: 15px 15px 14px #facd0493;
     width: 19vw;
     text-align: center;
     font-family: cursive;
 }
 
 .dashform h2 {
-    color: #0d0e0e;
+    color: #ecf1f1;
     font-family: cursive;
     border-radius: 8px;
-    background: #01546359;
+    background: #f0f8ff59;
     width: 15%;
 }
 
@@ -48,12 +49,13 @@ body {
     justify-content: center;
     gap: 2rem;
     margin: 2%;
-    background: #02485293;
+    background: #facd0493;
     height: 35vh;
-    border-radius: 10px;
+    border-top-left-radius: 200px;
+    border-bottom-right-radius: 200px;
     width: 30vw;
-    border: 3px solid#cfe1f0;
-    box-shadow: 15px 15px 13px#01325369;
+    border: 3px solid#3f3902;
+    box-shadow: 15px 15px 13px#3f3902;
     font-family: cursive;
 }
 

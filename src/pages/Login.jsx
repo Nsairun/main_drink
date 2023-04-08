@@ -25,7 +25,7 @@ function Login() {
     try {
       const { data } = await login(user.emailAddress, user.password);
       saveToken(data.token);
-      navigate('/dashboard');
+      navigate('/');
     } catch (e) {
       if (e.response.status === 401) {
         setError('Invalid username or password');
@@ -36,7 +36,7 @@ function Login() {
   };
 
   const toRegister = () => {
-    navigate('/');
+    navigate('/register');
   };
 
   return (
@@ -59,7 +59,8 @@ function Login() {
         />
         <button type="submit">Enter</button>
         <p>
-          Have an account ? <span onClick={toRegister}>HomePage...</span>
+          Don&apos;t Have an account ?
+          <span onClick={toRegister}>REGISTER...</span>
         </p>
       </div>
     </form>

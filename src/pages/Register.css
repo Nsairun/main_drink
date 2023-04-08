@@ -8,11 +8,8 @@ body {
    flex-direction: column;
    align-items: center;
    justify-content: center;
-   color: #9DB416;
+   color: #04325894;
    margin: 4%;
-   background-image: url(../images/Long\ Island\ Iced\ Tea\ &\ Long\ Island\ Drink\ Variations\ \(1\).png);
-   background-repeat: no-repeat;
-   background-size: cover;
 }
 
 .user h1 {
@@ -20,7 +17,7 @@ body {
 }
 
 .user p {
-    color: #f8f8f5;
+    color: #022347;
     font-weight: 700;
 }
 
