@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { getCurrentUser } from '../../api/auth';
+import NavBar from '../../components/NavBar';
 import './ProfilePage.css';
 
 function ProfilePage() {
@@ -11,6 +12,7 @@ function ProfilePage() {
 
   return (
     <div>
+      <NavBar />
       <div className="myProfile-container">
         <h1>
           <u>PROFILE</u>

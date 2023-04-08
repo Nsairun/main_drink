@@ -4,6 +4,7 @@
 import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { login } from '../api/auth';
+import NavBar from '../components/NavBar';
 import { saveToken } from '../utils';
 import './Login.css';
 
@@ -41,6 +42,7 @@ function Login() {
 
   return (
     <form onSubmit={handleSubmit}>
+      <NavBar />
       <div className="login">
         <h1>Log In</h1>
         {isLoading && <p>Loading...</p>}

@@ -43,7 +43,6 @@ function App() {
               <Route path="dashBd2" element={<DashBd2 />} />
               <Route path="dashBd3" element={<DashBd3 />} />
             </Route>
-            <Route path="/dashboard1" element={<Dashboard />} />
           </Routes>
         </BrowserRouter>
       </DrinksContext.Provider>

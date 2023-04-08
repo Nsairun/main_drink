@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { useNavigate, Outlet } from 'react-router-dom';
 import { getCurrentUser } from '../../api/auth';
+import NavBar from '../../components/NavBar';
 import './Dashboard.css';
 
 function Dashboard() {
@@ -25,10 +26,11 @@ function Dashboard() {
 
   return (
     <form className="dashform">
+      <NavBar />
       <div className="form1">
         <h1>Dashboard Page</h1>
         <h2>
-          {user?.firstName} {user?.lastName}
+          Admin: {user?.firstName} {user?.lastName}
         </h2>
       </div>
       <div className="accessTables">

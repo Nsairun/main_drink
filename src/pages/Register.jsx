@@ -4,6 +4,7 @@ import './Register.css';
 import { useNavigate } from 'react-router-dom';
 import { useState } from 'react';
 import { register } from '../api/auth';
+import NavBar from '../components/NavBar';
 
 function Register() {
   const [isLoading, setIsLoading] = useState(false);
@@ -32,6 +33,7 @@ function Register() {
   };
   return (
     <form onSubmit={handleSubmit}>
+      <NavBar />
       <div className="user">
         <h1>CREATE ACOUNT</h1>
         <p>{isLoading ? 'loading...' : ''}</p>

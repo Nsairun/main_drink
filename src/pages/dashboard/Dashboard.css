@@ -1,17 +1,17 @@
 body {
     margin: 0 auto;
     padding: 0;
+    background: rgba(5, 211, 238, 0.062);
 }
 
 .dashform {
     color:#f0f8ff;
-    margin: 5%;
 }
 
 .form1 {
     display: flex;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: space-between;
 }
 
 .dashform h1 {
@@ -20,13 +20,14 @@ body {
     width: 19vw;
     text-align: center;
     font-family: cursive;
+    border-radius: 10px;
 }
 
 .dashform h2 {
     color: #0d0e0e;
     font-family: cursive;
     border-radius: 8px;
-    background: #01546359;
+    background: #f03b0459;
     width: 15%;
 }
 
@@ -48,9 +49,9 @@ body {
     justify-content: center;
     gap: 2rem;
     margin: 2%;
-    background: #02485293;
+    background: #0247529a;
     height: 35vh;
-    border-radius: 10px;
+    border-radius: 50%;
     width: 30vw;
     border: 3px solid#cfe1f0;
     box-shadow: 15px 15px 13px#01325369;

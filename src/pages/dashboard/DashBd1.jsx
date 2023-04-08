@@ -20,10 +20,10 @@ function DashBd1() {
   return (
     <div>
       <form onSubmit={handleSubmit}>
-        <div className="drink_container">
-          <h1>Edit Drinks</h1>
+        <div className=" boisson_container">
           <ul>
             <li>
+              <h1>Edit Drinks</h1>
               <input type="text" placeholder="Edit drink name" required />
               <input type="text" placeholder="Edit drink img src" required />
               <input type="text" placeholder="Edit drink desc" required />

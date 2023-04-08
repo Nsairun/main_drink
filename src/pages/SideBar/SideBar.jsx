@@ -118,7 +118,7 @@ function SideBar({ currentUser }) {
                 }
               >
                 <h3>
-                  Admin...
+                  Navigate Pages...
                   <FaUserTie />
                 </h3>
               </div>

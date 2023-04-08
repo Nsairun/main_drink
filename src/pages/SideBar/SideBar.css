@@ -199,6 +199,10 @@ body {
   border-radius: 9%;
 }
 
+.containing_span h3 {
+  color: #bfeaf1;
+}
+
 .inside-span {
   color: #010a13;
   display: flex;
@@ -253,7 +257,7 @@ body {
   min-height: 200px;
   max-height: 350px;
   margin: 0 0 10px;
-  border-radius: 10px;
+  border-radius: 20px;
 }
 
 .drink p {
